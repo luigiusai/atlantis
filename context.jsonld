@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "psca": "https://atlantisfound.it/ontology#",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "swrl": "http://www.w3.org/2003/11/swrl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "identifier": "schema:identifier",
+    "location": "schema:location",
+    "coordinates": "geo:asWKT",
+    "lat": { "@id": "schema:latitude", "@type": "xsd:decimal" },
+    "long": { "@id": "schema:longitude", "@type": "xsd:decimal" },
+
+    "depth_m": { "@id": "psca:bathymetricDepth", "@type": "xsd:decimal" },
+    "target_depth_m": { "@id": "psca:predictedStratigraphicDepth", "@type": "xsd:decimal" },
+    "age_bp": { "@id": "psca:yearsBeforePresent", "@type": "xsd:integer" },
+    "c14_age_bp": { "@id": "psca:radiocarbonAgeBP", "@type": "xsd:integer" },
+    
+    "chemical_signature": "psca:geochemicalFingerprint",
+    "pb_206_204": { "@id": "psca:leadIsotopeRatio206_204", "@type": "xsd:decimal" },
+    "pb_207_204": { "@id": "psca:leadIsotopeRatio207_204", "@type": "xsd:decimal" },
+    "zn_concentration": { "@id": "psca:zincPPM", "@type": "xsd:decimal" },
+    
+    "taxon_name": "psca:biologicalTaxon",
+    "species": "psca:speciesIdentification",
+    
+    "hypothesis": "schema:Hypothesis",
+    "falsification_threshold": "psca:PopperianFalsificationCriterion",
+    "expected_material": "psca:predictedArchaeologicalMaterial",
+    "confidence": { "@id": "psca:statisticalConfidence", "@type": "xsd:decimal" },
+    
+    "GeospatialPoint": "psca:BathymetricPoint",
+    "MaterialEvidence": "psca:ArchaeologicalEvidence",
+    "HydraulicFeature": "psca:AncientHydraulicStructure",
+    "TectonicFeature": "psca:GeologicalFault",
+    "MineralProxy": "psca:MetallurgicalTracer",
+    "TemporalClaim": "psca:ChronologicalAssertion",
+    
+    "wasDerivedFrom": "prov:wasDerivedFrom",
+    "hasBody": "swrl:hasBody"
+  }
+}
