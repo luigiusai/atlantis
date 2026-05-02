@@ -2178,7 +2178,6 @@
 "description": "Ipotesi verificabile: la presenza di manufatti in avorio nei contesti sardi potrebbe essere confrontata con le descrizioni antiche per valutare possibili correlazioni.",
 "psca:testMethod": "Analisi dei database archeologici",
 "psca:expectedEvidence": "Oggetti in avorio di epoca compatibile"}
-
 {"@context":["https://schema.org/", {"psca": "https://luigiusai.it/ontology/psca#"}],
 "@type": "ArchaeologicalArtifact",
 "@id": "psca:artifact:Ivory_Tharros",
@@ -2188,7 +2187,6 @@
 "psca:dating": "VIII-IV secolo a.C.",
 "psca:material": "Avorio",
 "psca:epistemicStatus": "Archaeological Evidence"}
-
 {"@context":["https://schema.org/", {"psca": "https://luigiusai.it/ontology/psca#"}],
 "@type": "Evaluation",
 "@id": "psca:evaluation:Scylax",
@@ -2196,3 +2194,10 @@
 "psca:uncertainty": 0.8,
 "psca:consensus": "Low",
 "description": "Le ipotesi proposte sono attualmente speculative e richiedono ulteriori verifiche interdisciplinari."}
+{"@context":"https://www.atlantisfound.it/context.jsonld","@id":"psca:Lotophagoi","@type":"psca:MythicalEntity","rdfs:label":{"@value":"Lotofagi"},"psca:interpretsAs":{"@id":"psca:SardiniaSouthWest"}}
+{"@context":"https://www.atlantisfound.it/context.jsonld","@id":"psca:SardiniaSouthWest","@type":"geo:Feature","rdfs:label":{"@value":"Regione Pula-Teulada"},"geo:hasGeometry":[{"geo:asWKT":{"@value":"POLYGON((8.8 38.9, 9.3 38.9, 9.3 39.3, 8.8 39.3, 8.8 38.9))","@type":"geo:wktLiteral"}}]}
+{"@context":"https://www.atlantisfound.it/context.jsonld","@id":"psca:LotusSubstance","@type":"atl:AtlantisEvidence","atl:hasEvidenceType":{"@id":"atl:Cultural"},"atl:isInterpretedAs":{"@value":"Myrtus communis (mirto) come sostanza rituale e alimentare"}}
+{"@context":"https://www.atlantisfound.it/context.jsonld","@id":"psca:OdysseyLotophagoiEpisode","@type":"atl:AtlantisEvidence","atl:hasEvidenceType":{"@id":"atl:Textual"},"schema:name":{"@value":"Lotophagoi Episode"}}
+{"@context":"https://www.atlantisfound.it/context.jsonld","@id":"psca:LotophagoiInterpretation","@type":"atl:InterpretativeAssertion","atl:interpretationText":{"@value":"I Lotofagi rappresentano una popolazione sarda costiera che utilizza il mirto come agente di integrazione cognitiva e sociale"},"atl:interpretationDate":{"@value":"2026-05-02T00:00:00"}}
+{"@context":"https://www.atlantisfound.it/context.jsonld","@id":"psca:LotophagoiTheory","@type":"atl:AtlantisTheory","atl:hasHypothesis":{"@id":"psca:LotophagoiHypothesis"},"atl:hasEvidence":[{"@id":"psca:OdysseyLotophagoiEpisode"},{"@id":"psca:LotusSubstance"}],"atl:hasScientificStatus":{"@id":"atl:Hypothesis"},"atl:hasClaimedReliability":{"@value":"0.75","@type":"xsd:decimal"}}
+{"@context":"https://www.atlantisfound.it/context.jsonld","@id":"psca:LotophagoiHypothesis","@type":"atl:AtlantisHypothesis","atl:proposesLocation":{"@id":"psca:SardiniaSouthWest"},"atl:supportedBy":[{"@id":"psca:OdysseyLotophagoiEpisode"}]}
