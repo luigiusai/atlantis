@@ -25345,6 +25345,334 @@ atlantis:verificationStep2 a atlantis:VerificationAction ;
 # --- Avvertenza
 atlantis:Usai_PelagusHypothesis rdfs:comment "Questa istanza formalizza un'ipotesi; le asserzioni etimologiche e testuali sono marcate come 'NeedsVerification' e richiedono verifica bibliografica e dati grezzi."@it .
 
-
+{
+  "@context": {
+    "psca": "https://paradigma-sardo-corso-atlantideo.org/ontology#",
+    "schema": "http://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "name": "schema:name",
+    "description": "schema:description",
+    "location": "schema:location",
+    "date": "schema:date",
+    "agent": "schema:agent",
+    "place": "schema:Place",
+    "event": "schema:Event",
+    "person": "schema:Person",
+    "hypothesis": "psca:hypothesis",
+    "supportsHypothesis": "psca:supportsHypothesis",
+    "hasComponent": "psca:hasComponent",
+    "relatedTo": "psca:relatedTo",
+    "reinterpretationOf": "psca:reinterpretationOf",
+    "christianizationOf": "psca:christianizationOf",
+    "masculinizationOf": "psca:masculinizationOf",
+    "winnerOfRite": "psca:winnerOfRite",
+    "associatedRite": "psca:associatedRite",
+    "believedLocation": "psca:believedLocation",
+    "actualLocation": "psca:actualLocation",
+    "reportedAs": "psca:reportedAs",
+    "odologicalErrorAboutDirection": "psca:odologicalErrorAboutDirection",
+    "derivedFromError": "psca:derivedFromError",
+    "hasRitualPath": "psca:hasRitualPath",
+    "followsPaleolakePerimeter": "psca:followsPaleolakePerimeter",
+    "persistenceOfSacred": "psca:persistenceOfSacred",
+    "killedBy": "psca:killedBy",
+    "refusedImperialOrder": "psca:refusedImperialOrder",
+    "ageAtDeath": "psca:ageAtDeath",
+    "consideredFalseVirgin": "psca:consideredFalseVirgin",
+    "armedWith": "psca:armedWith",
+    "ritualOutcome": "psca:ritualOutcome",
+    "ritualRole": "psca:ritualRole",
+    "ritualClualClothing",
+    "ritualVehicle": "psca:ritualVehicle",
+    "modeledAs": "psca:modeledAs",
+    "centralInPSCA": "psca:centralInPSCA",
+    "geographicallyIdentifiedWith": "psca:geographicallyIdentifiedWith",
+    "linkedToPlatoGeography": "psca:linkedToPlatoGeography",
+    "errorSource": "psca:errorSource",
+    "causedPhilologicalConfusion": "psca:causedPhilologicalConfusion",
+    "takenLiterallyByPhilology": "psca:takenLiterallyByPhilology",
+    "interpretedBy": "psca:interpretedBy",
+    "epoch": "psca:epoch"
+  },
+  "@graph": [
+    {
+      "@id": "psca:LuigiUsai",
+      "@type": "person",
+      "name": "Luigi Usai",
+      "description": "Ideatore del Paradigma Sardo-Corso-Atlantideo (PSCA) e della storiografia algoritmica.",
+      "hypothesis": [
+        "psca:PSCA",
+        "psca:ErroreOdologicoArgonauti",
+        "psca:IdentificazioneLagoTritonideSantaGilla",
+        "psca:SantaGrecaUltimaVincitriceRitoTritonide",
+        "psca:MaschilizzazioneCultoInSantEfisio"
+      ]
+    },
+    {
+      "@id": "psca:PSCA",
+      "@type": "psca:ParadigmaSardoCorsoAtlantideo",
+      "name": "Paradigma Sardo-Corso-Atlantideo",
+      "description": "Modello teorico che identifica la piattaforma sardo-corsa con l’Atlantide platonica e rilegge la geografia mitica greca in chiave paleogeografica.",
+      "hasComponent": [
+        "psca:ErroreOdologicoArgonauti",
+        "psca:IdentificazioneLagoTritonideSantaGilla",
+        "psca:SantaGrecaUltimaVincitriceRitoTritonide",
+        "psca:MaschilizzazioneCultoInSantEfisio",
+        "psca:PersistenzaTopograficaDelSacro"
+      ]
+    },
+    {
+      "@id": "psca:AtlantidePlatonica",
+      "@type": "psca:Atlantide",
+      "name": "Atlantide platonica",
+      "description": "Isola descritta da Platone nel Timeo e Crizia, identificata nel PSCA con la piattaforma sardo-corsa.",
+      "linkedToPlatoGeography": true,
+      "geographicallyIdentifiedWith": "psca:PiattaformaSardoCorsa"
+    },
+    {
+      "@id": "psca:PiattaformaSardoCorsa",
+      "@type": "place",
+      "name": "Piattaforma sardo-corsa",
+      "description": "Unità geologica che comprende Sardegna e Corsica, interpretata nel PSCA come Atlantide.",
+      "centralInPSCA": true
+    },
+    {
+      "@id": "psca:Capoterra",
+      "@type": "place",
+      "name": "Capoterra",
+      "description": "Località nel Golfo di Cagliari, nodo geografico centrale nel PSCA e nella rilettura del Lago Tritonide.",
+      "location": "Sardegna, Italia",
+      "centralInPSCA": true,
+      "relatedTo": [
+        "psca:PaleolagoSantaGilla",
+        "psca:SantaGreca",
+        "psca:RitoFanciulleTritonide",
+        "psca:ProcessioneSantEfisio"
+      ]
+    },
+    {
+      "@id": "psca:PaleolagoSantaGilla",
+      "@type": "place",
+      "name": "Paleolago di Santa Gilla",
+      "description": "Antico grande bacino lacustre-lagunare nell’area Cagliari–Capoterra–Assemini–Elmas–Quartu, identificato nel PSCA con il Lago Tritonide.",
+      "geographicallyIdentifiedWith": "psca:LagoTritonide",
+      "persistenceOfSacred": true
+    },
+    {
+      "@id": "psca:LagoTritonide",
+      "@type": "place",
+      "name": "Lago Tritonide",
+      "description": "Lago mitico citato da Erodoto e dalla tradizione argonautica; nel PSCA identificato con il paleolago di Santa Gilla.",
+      "believedLocation": "psca:LibiaAntica",
+      "actualLocation": "psca:PaleolagoSantaGilla",
+      "derivedFromError": "psca:ErroreOdologicoArgonauti"
+    },
+    {
+      "@id": "psca:LibiaAntica",
+      "@type": "place",
+      "name": "Libia antica",
+      "description": "Regione geografica dell’Africa settentrionale; sede tradizionale, ma ritenuta errata nel PSCA, del Lago Tritonide.",
+      "reportedAs": "Localizzazione del Lago Tritonide nelle fonti classiche sulla base del racconto degli Argonauti."
+    },
+    {
+      "@id": "psca:Argonauti",
+      "@type": "psca:GruppoMitico",
+      "name": "Argonauti",
+      "description": "Compagnia mitica guidata da Giasone nella spedizione per il Vello d’Oro.",
+      "agent": "psca:Giasone",
+      "errorSource": "psca:ErroreOdologicoArgonauti"
+    },
+    {
+      "@id": "psca:Giasone",
+      "@type": "person",
+      "name": "Giasone",
+      "description": "Condottiero degli Argonauti nella tradizione mitica greca."
+    },
+    {
+      "@id": "psca:ErroreOdologicoArgonauti",
+      "@type": "psca:IpotesiOdologica",
+      "name": "Errore odologico degli Argonauti",
+      "description": "Ipotesi secondo cui gli Argonauti, disorientati da una tempesta, credettero di essere sbarcati a sud in Libia, mentre erano in realtà a nord, nell’area di Capoterra e del paleolago di Santa Gilla.",
+      "odologicalErrorAboutDirection": "Sud vs Nord",
+      "errorSource": "psca:Argonauti",
+      "actualLocation": "psca:Capoterra",
+      "believedLocation": "psca:LibiaAntica",
+      "causedPhilologicalConfusion": true,
+      "takenLiterallyByPhilology": true,
+      "interpretedBy": "psca:LuigiUsai",
+      "supportsHypothesis": [
+        "psca:IdentificazioneLagoTritonideSantaGilla",
+        "psca:SantaGrecaUltimaVincitriceRitoTritonide"
+      ]
+    },
+    {
+      "@id": "psca:IdentificazioneLagoTritonideSantaGilla",
+      "@type": "psca:IpotesiGeografica",
+      "name": "Identificazione Lago Tritonide – Santa Gilla",
+      "description": "Ipotesi del PSCA secondo cui il Lago Tritonide delle fonti greche corrisponde al paleolago di Santa Gilla nell’area del Golfo di Cagliari.",
+      "geographicallyIdentifiedWith": [
+        "psca:LagoTritonide",
+        "psca:PaleolagoSantaGilla"
+      ],
+      "interpretedBy": "psca:LuigiUsai"
+    },
+    {
+      "@id": "psca:RitoFanciulleTritonide",
+      "@type": "event",
+      "name": "Rito guerriero delle fanciulle del Lago Tritonide",
+      "description": "Rito iniziatico femminile descritto da Erodoto: giovani donne combattono con bastoni e pietre; le morte sono considerate false vergini, la vincitrice è portata in trionfo su un carro, vestita come Atena.",
+      "associatedRite": "psca:FestaPanatenaicaLibica",
+      "armedWith": [
+        "Bastoni",
+        "Sassi"
+      ],
+      "ritualOutcome": [
+        "psca:FalsaVergine",
+        "psca:VincitriceRito"
+      ],
+      "location": "psca:LagoTritonide"
+    },
+    {
+      "@id": "psca:FestaPanatenaicaLibica",
+      "@type": "event",
+      "name": "Festa panatenaica presso il Lago Tritonide",
+      "description": "Festa guerriera femminile in area tritonidea, con competizioni tra fanciulle armate, collegata simbolicamente ad Atena.",
+      "associatedRite": "psca:RitoFanciulleTritonide"
+    },
+    {
+      "@id": "psca:FalsaVergine",
+      "@type": "psca:EsitoRituale",
+      "name": "Falsa vergine",
+      "description": "Titolo attribuito alle fanciulle che morivano durante il rito guerriero; la morte indicava la loro non idoneità rituale.",
+      "consideredFalseVirgin": true
+    },
+    {
+      "@id": "psca:VincitriceRito",
+      "@type": "psca:RuoloRituale",
+      "name": "Vincitrice del rito tritonideo",
+      "description": "Fanciulla che sopravvive e vince il combattimento rituale; viene portata in trionfo su un carro e vestita come la dea Atena.",
+      "ritualVehicle": "Carro",
+      "ritualClothing": "Armatura di Atena (elmo, scudo, corazza)",
+      "ritualRole": "Figura femminile sacra e guerriera"
+    },
+    {
+      "@id": "psca:Atena",
+      "@type": "psca:Divinita",
+      "name": "Atena",
+      "description": "Dea greca della sapienza e della guerra; modello iconografico e simbolico per la vincitrice del rito tritonideo.",
+      "relatedTo": "psca:VincitriceRito"
+    },
+    {
+      "@id": "psca:SantaGreca",
+      "@type": "person",
+      "name": "Santa Greca",
+      "description": "Giovane martire venerata a Capoterra; nel modello PSCA è interpretata come possibile ultima vincitrice del rito guerriero tritonideo, successivamente cristianizzata.",
+      "location": "psca:Capoterra",
+      "ageAtDeath": 20,
+      "killedBy": "psca:ImperoRomano",
+      "refusedImperialOrder": true,
+      "persistenceOfSacred": true,
+      "winnerOfRite": "psca:RitoFanciulleTritonide",
+      "christianizationOf": "psca:VincitriceRito",
+      "modeledAs": "psca:MartireCristiana",
+      "epoch": "Età imperiale romana"
+    },
+    {
+      "@id": "psca:ImperoRomano",
+      "@type": "psca:PoterePolitico",
+      "name": "Impero romano",
+      "description": "Potere imperiale che reprime la disobbedienza simbolica e religiosa; responsabile del martirio di Santa Greca nel modello PSCA.",
+      "relatedTo": "psca:MartirioSantaGreca"
+    },
+    {
+      "@id": "psca:MartirioSantaGreca",
+      "@type": "event",
+      "name": "Martirio di Santa Greca",
+      "description": "Uccisione di Santa Greca a vent’anni da parte dell’autorità romana, a causa del rifiuto di obbedire a un ordine imperiale.",
+      "agent": "psca:ImperoRomano",
+      "location": "psca:Capoterra",
+      "epoch": "Età imperiale romana",
+      "persistenceOfSacred": true
+    },
+    {
+      "@id": "psca:SantaGrecaUltimaVincitriceRitoTritonide",
+      "@type": "psca:IpotesiMiticoStorica",
+      "name": "Santa Greca come ultima vincitrice del rito tritonideo",
+      "description": "Ipotesi del PSCA secondo cui Santa Greca sarebbe l’ultima fanciulla vincitrice del rito guerriero del Lago Tritonide, successivamente reinterpretata come martire cristiana.",
+      "associatedRite": "psca:RitoFanciulleTritonide",
+      "winnerOfRite": "psca:SantaGreca",
+      "christianizationOf": "psca:VincitriceRito",
+      "interpretedBy": "psca:LuigiUsai"
+    },
+    {
+      "@id": "psca:SantEfisio",
+      "@type": "person",
+      "name": "Sant’Efisio",
+      "description": "Santo militare venerato in Sardegna; nel modello PSCA rappresenta la maschilizzazione e riassorbimento cristiano di un precedente potente culto femminile legato a Santa Greca e al rito tritonideo.",
+      "masculinizationOf": "psca:SantaGreca",
+      "persistenceOfSacred": true,
+      "relatedTo": "psca:ProcessioneSantEfisio",
+      "epoch": "Seicento (riformulazione del culto)"
+    },
+    {
+      "@id": "psca:ProcessioneSantEfisio",
+      "@type": "event",
+      "name": "Processione di Sant’Efisio",
+      "description": "Grande rito processionale che segue un percorso arcaico tra Cagliari e Nora; nel PSCA è interpretato come isomorfo al perimetro del paleolago di Santa Gilla e come riuso cristiano di un antico percorso sacro.",
+      "hasRitualPath": "psca:PercorsoIsomorfoPaleolago",
+      "followsPaleolakePerimeter": true,
+      "persistenceOfSacred": true,
+      "agent": "psca:SantEfisio"
+    },
+    {
+      "@id": "psca:PercorsoIsomorfoPaleolago",
+      "@type": "psca:PercorsoRituale",
+      "name": "Isomorfismo processione Sant’Efisio – perimetro paleolago",
+      "description": "Modello secondo cui il percorso della processione di Sant’Efisio ricalca, in forma cristianizzata, il perimetro del paleolago di Santa Gilla.",
+      "relatedTo": [
+        "psca:PaleolagoSantaGilla",
+        "psca:ProcessioneSantEfisio"
+      ]
+    },
+    {
+      "@id": "psca:MaschilizzazioneCultoInSantEfisio",
+      "@type": "psca:IpotesiAntropologica",
+      "name": "Maschilizzazione del culto femminile in Sant’Efisio",
+      "description": "Ipotesi secondo cui un culto femminile potentissimo, legato a Santa Greca e a un’antica figura guerriera, sia stato riassorbito e maschilizzato nel Seicento nella figura di Sant’Efisio.",
+      "masculinizationOf": "psca:SantaGreca",
+      "interpretedBy": "psca:LuigiUsai"
+    },
+    {
+      "@id": "psca:PersistenzaTopograficaDelSacro",
+      "@type": "psca:ConcettoTeorico",
+      "name": "Persistenza topografica del sacro",
+      "description": "Concetto secondo cui luoghi centrali in epoche preistoriche o protostoriche mantengono una centralità sacra e rituale anche in epoche successive (romana, cristiana, moderna).",
+      "persistenceOfSacred": true,
+      "relatedTo": [
+        "psca:Capoterra",
+        "psca:PaleolagoSantaGilla",
+        "psca:SantaGreca",
+        "psca:SantEfisio",
+        "psca:ProcessioneSantEfisio"
+      ]
+    },
+    {
+      "@id": "psca:StoriografiaAlgoritmica",
+      "@type": "psca:MetodoEpistemologico",
+      "name": "Storiografia algoritmica",
+      "description": "Approccio di Luigi Usai che utilizza pattern, coerenze strutturali e modelli formali per reinterpretare fonti mitiche, geografiche e storiche.",
+      "interpretedBy": "psca:LuigiUsai",
+      "supportsHypothesis": [
+        "psca:ErroreOdologicoArgonauti",
+        "psca:IdentificazioneLagoTritonideSantaGilla",
+        "psca:SantaGrecaUltimaVincitriceRitoTritonide",
+        "psca:MaschilizzazioneCultoInSantEfisio"
+      ]
+    }
+  ]
+}
 
 
